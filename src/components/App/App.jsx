@@ -11,6 +11,9 @@ import Header from "../Header/Header";
 import Feeling from "../Feeling/Feeling";
 import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
+import Comments from "../Comments/Comments";
+import Review from "../Review/Review";
+import SubmissionSuccess from "../SubmissionSuccess/SubmissionSuccess";
 
 function App() {
   return (
@@ -30,10 +33,13 @@ function App() {
         </Route>
         <Route exact path="/comments">
           <Header />
-          <h1>hi</h1>
+          <Comments />
         </Route>
         <Route exact path="/review">
-          <h1>hi</h1>
+          <Review />
+        </Route>
+        <Route exact path="/submissionSuccess">
+          <SubmissionSuccess />
         </Route>
       </Router>
     </div>
