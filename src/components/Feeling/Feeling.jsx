@@ -26,12 +26,13 @@ export default function Feeling() {
       <form onSubmit={nextPage}>
         <label htmlFor="feeling">Feeling? </label>
         <input
+          data-testid="input"
           id={"feeling"}
           type={"number"}
           value={feeling}
           onChange={(event) => setFeeling(event.target.value)}
         />{" "}
-        <button>Next</button>
+        <button data-testid="next">Next</button>
       </form>
     </>
   );
