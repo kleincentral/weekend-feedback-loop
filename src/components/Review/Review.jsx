@@ -14,6 +14,16 @@ export default function Review() {
 
   const submitSupport = () => {
     console.log("Attempting to submit!");
+    axios({
+      method: "POST",
+      url: "/feedback",
+      data: {
+        feeling: feeling,
+        understanding: understanding,
+        support: support,
+        comments: comments,
+      },
+    });
     dispatch({
       type: "CLEAR_INPUTS",
     });
