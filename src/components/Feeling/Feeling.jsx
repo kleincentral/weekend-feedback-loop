@@ -3,11 +3,14 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from "react-redux";
 
 export default function Feeling() {
+  // Sets a usestate to properly update your ui
   let [feeling, setFeeling] = useState("");
 
+  // Sets history and dispatch for later use
   const history = useHistory();
   const dispatch = useDispatch();
 
+  // Saves your
   const nextPage = (e) => {
     e.preventDefault();
     console.log("Hi");
